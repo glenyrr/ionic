@@ -1,6 +1,6 @@
 {
-  "name": "mistabs",
-  "app_id": "af87725b",
+  "name": "sonidos",
+  "app_id": "",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
