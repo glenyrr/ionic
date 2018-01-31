@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color='primary'>
     <ion-title>
-      Sonidos
+      Sonidos: Estoy en Cambiar el orden de la lista
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -13,7 +13,7 @@
         </ion-refresher-content>
       </ion-refresher>
 
- <ion-list>
+ <ion-list [reorder]="ordenando" (ionItemReorder)="reordenar_animales($event)">
   <ion-item-sliding #item *ngFor = 'let animal of animales; let i = index'>
     <ion-item  (click)='reproducir(animal)'> 
       <ion-avatar item-start>
