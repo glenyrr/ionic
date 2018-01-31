@@ -52,4 +52,10 @@ export class HomePage {
       }
     }
   }
+
+  private borrar_Animal(idx:number){
+    this.animales.splice(idx,1)
+  }
+
+
 }
