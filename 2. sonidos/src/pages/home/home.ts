@@ -57,5 +57,11 @@ export class HomePage {
     this.animales.splice(idx,1)
   }
 
+  private recargar_animales(refresher:any){
+    setTimeout(()=> {
+      this.animales = ANIMALES.slice(0);
 
+      refresher.complete();
+    },1500)
+  }
 }
